@@ -1,0 +1,14 @@
+
+<h1>My Dashboard</h1>
+<!-- STRING INTERPOLATION -->
+<h2>{{ loadState }}</h2>
+<!-- BINDING -->
+<h3 [textContent]="loadState"></h3>
+<h4 [textContent]="loadState"></h4>
+<button (click)='onSwitchState()'>Complete load</button>
+
+<!-- EVENT LISTENER BINDING -->
+<!-- <input type="text" (input)="loadState = $event.target.value"/> -->
+
+<!-- PROPERTY BINDING -->
+<input type="text" [(ngModel)]='loadState'/>
